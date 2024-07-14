@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Form</h1>
+        <form>
+            <label for="feedback-type"><strong>Feedback Type:</strong></label>
+            <select id="feedback-type" name="feedback-type">
+                <option value="compliment">Compliment</option>
+                <option value="complaint">Complaint</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message"><strong>Message:</strong></label>
+            <textarea id="message" name="message"></textarea>
+
+            <div class="radio">
+                <label><strong>Website Rating:</strong></label>
+                <input type="radio" id="excellent" name="rating" value="excellent">
+                <label for="excellent">Excellent</label>
+                <input type="radio" id="good" name="rating" value="good">
+                <label for="good">Good</label>
+                <input type="radio" id="average" name="rating" value="average">
+                <label for="average">Average</label>
+                <input type="radio" id="poor" name="rating" value="poor">
+                <label for="poor">Poor</label>
+            </div>
+
+            <label for="age"><strong>Age (10-100):</strong></label>
+            <input type="number" id="age" name="age" min="10" max="100">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password (min. 8 characters):</label>
+            <input type="password" id="password" name="password" minlength="8">
+
+            <label for="website-url">Website URL (optional):</label>
+            <input type="url" id="website-url" name="website-url"/>
+            <div class="checkbox">
+            <input type="checkbox" id="terms" name="terms" required/>I agree to the terms and conditions
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
